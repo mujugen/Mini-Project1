@@ -18,7 +18,7 @@
 
 /* Header */
 .home-header {
-  background-image: url("/images/mainpic.png");
+  background-image: url("../images/mainpic.png");
   background-size: cover;
   background-position: top;
   width: 100%;
