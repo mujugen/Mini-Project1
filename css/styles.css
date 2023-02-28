@@ -1,0 +1,50 @@
+/* Navigation */
+.nav-link {
+  color: #1e1e1e;
+}
+
+.logo-style {
+  font-family: Fleur De Leah;
+  font-size: 200%;
+  padding: 0%;
+}
+
+.nav-items-custom {
+  font-family: Fjord One;
+  color: rgb(255, 0, 0);
+  font-size: 150%;
+  padding: 0%;
+}
+
+/* Header */
+.home-header {
+  background-image: url("/images/mainpic.png");
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100vh;
+}
+
+.header-text {
+  padding: 5%;
+  font-family: Fauna One;
+  color: white;
+  font-size: 300%;
+}
+
+.header-btn {
+  background: #ffffff;
+  border-radius: 50px;
+  font-family: Fauna One;
+  font-size: 150%;
+  color: #000000;
+  padding: 10px 20px 10px 20px;
+}
+
+.header-btn:hover {
+  background: #3cb0fd;
+}
+
+.header-button-div {
+  padding: 0% 5%;
+}
