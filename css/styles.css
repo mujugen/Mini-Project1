@@ -30,7 +30,7 @@ body {
   .nav-items-custom {
     font-family: Fjord One;
     color: rgb(255, 0, 0);
-    font-size: 2vh;
+    font-size: 1.5vh;
     padding: 0%;
   }
 }
@@ -39,7 +39,7 @@ body {
   .nav-items-custom {
     font-family: Fjord One;
     color: rgb(255, 0, 0);
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding: 0%;
   }
 }
@@ -93,8 +93,9 @@ body {
 .header-button-div {
   padding: 0% 5%;
 }
-.header-container {
+.flexbox-container {
   height: auto;
+  margin-bottom: 5%;
 }
 
 .header-cell {
@@ -113,6 +114,24 @@ body {
   text-align: center;
   font-family: Fauna One;
   padding-top: 1rem;
+}
+/* Reviews */
+.review-cards {
+  font-family: Fauna One;
+  background-color: #fcf5ee;
+  border-radius: 30px;
+  margin: 3%;
+  width: 30vw;
+  min-width: 50vh;
+  flex-wrap: wrap;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0;
+}
+
+.review-img{
+  border-radius: 30px;
 }
 
 /* Footer */
