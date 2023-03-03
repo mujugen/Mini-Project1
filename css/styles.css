@@ -14,6 +14,7 @@ body {
   width: 100%;
   top: 0;
   height: fit-content;
+  z-index: 1;
 }
 
 .nav-link {
@@ -165,12 +166,12 @@ body {
   height: 30vh;
   width: 100%;
   margin-top: 5vh;
-  position:relative;
+  position: relative;
 }
 .rose-header {
   background-image: url("../images/rose-background.jpg");
   background-size: cover;
-  height:30vh;
+  height: 30vh;
   width: 100%;
   top: 0;
   background-position: 0%;
@@ -183,8 +184,8 @@ body {
   width: 100%;
   text-align: center;
   text-shadow: 5px 5px #1e1e1e;
-  bottom:0;
-  position:absolute;
+  bottom: 0;
+  position: absolute;
 }
 
 /* Shopping Boxes */
