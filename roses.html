@@ -27,22 +27,42 @@
       </div>
       <!-- Rose Selection -->
       <div>
-        <div class="d-flex flex-wrap justify-content-center flexbox-container">
+        <div
+          class="d-flex flex-wrap justify-content-center flexbox-container"
+          id="rose-container"
+        >
           <div class="p-2 cell">
-            <a href="roses.html">
-              <span class="link"></span>
-            </a>
-            <img src="./images/roses.jpg" alt="Roses" style="width: 100%" />
-            <h2 class="cell-text-title">Roses</h2>
-            <p class="cell-text-title">
-              From red, yellow, pink, to black, browse our fresh roses
-            </p>
+            <img class="cell-img" src="./images/roses.jpg" alt="Roses" />
+            <p class="cell-text-title">P50</p>
+            <div class="d-flex justify-content-center">
+              <h2><button class="cell-btn">Buy Now</button></h2>
+            </div>
           </div>
-          <div id="cell-placeholder"></div>
+
           <script>
-            $(function () {
-              $("#cell-placeholder").load("cell.html");
-            });
+            function addCard(i) {
+              const rose_container = document.getElementById("rose-container");
+              const rose_cell = document.createElement("div");
+              rose_cell.className = "p-2 cell";
+              const rose_img = document.createElement("img");
+              var img_filename = "/images/rose-page/" + i + ".jpg";
+              rose_img.src = img_filename;
+              rose_img.className = "cell-img";
+              const rose_price = document.createElement("p");
+              rose_price.className = "cell-text-title";
+              rose_price.textContent = "P60";
+              const rose_btn_container = document.createElement("div");
+              rose_btn_container.className = "d-flex justify-content-center";
+              const rose_btn = document.createElement("button");
+              rose_btn.className = "cell-btn";
+              rose_btn.textContent = "Buy Now";
+              rose_container.append(rose_cell);
+              rose_cell.append(rose_img, rose_price, rose_btn_container);
+              rose_btn_container.append(rose_btn);
+            }
+            for (let i = 1; i < 19; i++) {
+              addCard(i);
+            }
           </script>
         </div>
       </div>

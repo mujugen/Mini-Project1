@@ -51,7 +51,6 @@ body {
     background-size: cover;
     background-position: top;
     height: 50vh;
-    /*   width: 100%; */
     align-items: center;
     margin-top: 5vh;
   }
@@ -63,7 +62,6 @@ body {
     background-size: cover;
     background-position: top;
     height: 50vw;
-    /*   width: 100%; */
     align-items: center;
     margin-top: 5vh;
   }
@@ -165,27 +163,28 @@ body {
 /* Rose Styles */
 .rose-header-container {
   height: 30vh;
-  margin-top: 5vh;
-}
-.rose-header {
-  height: 30vh;
-  background-image: url("../images/rose-background.jpg");
-  background-size: cover;
   width: 100%;
   margin-top: 5vh;
+  position:relative;
+}
+.rose-header {
+  background-image: url("../images/rose-background.jpg");
+  background-size: cover;
+  height:30vh;
+  width: 100%;
   top: 0;
-  position: absolute;
   background-position: 0%;
 }
 .rose-header-text {
   font-family: Fjord One;
   font-size: 8vh;
   color: white;
-  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
   text-shadow: 5px 5px #1e1e1e;
+  bottom:0;
+  position:absolute;
 }
 
 /* Shopping Boxes */
@@ -198,10 +197,10 @@ body {
   background-color: white;
   width: 25vh;
   min-width: 25vh;
+  min-height: 38vh;
   margin: 3vw;
   flex-wrap: wrap;
   cursor: pointer;
-  position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 0;
 }
@@ -209,5 +208,20 @@ body {
 .cell-text-title {
   text-align: center;
   font-family: Fauna One;
-  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+.cell-img {
+  width: 100%;
+}
+
+.cell-btn {
+  background: #ff0034;
+  border-radius: 50px;
+  font-family: Fauna One;
+  font-size: 1.5rem;
+  color: white;
+  border-style: none;
+  padding: 10px 30px 10px 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
