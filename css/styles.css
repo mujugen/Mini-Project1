@@ -31,7 +31,7 @@ body {
   .nav-items-custom {
     font-family: Fjord One;
     color: rgb(255, 0, 0);
-    font-size: 1.5vh;
+    font-size: calc(8px + 0.8vh);
     padding: 0%;
   }
 }
@@ -40,7 +40,7 @@ body {
   .nav-items-custom {
     font-family: Fjord One;
     color: rgb(255, 0, 0);
-    font-size: 1.5vw;
+    font-size: calc(8px + 0.8vw);
     padding: 0%;
   }
 }
@@ -72,12 +72,12 @@ body {
   padding: 5%;
   font-family: Fauna One;
   color: white;
-  font-size: 4vh;
+  font-size: 3vh;
 }
 
 @media screen and (orientation: landscape) {
   .header-text {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }
 
@@ -85,14 +85,14 @@ body {
   background: #ffffff;
   border-radius: 50px;
   font-family: Fauna One;
-  font-size: 2vh;
+  font-size: 1.3vh;
   color: #2b2b2b;
   border-style: none;
   padding: 10px 30px 10px 30px;
 }
 @media screen and (orientation: landscape) {
   .header-btn {
-    font-size: 2vw;
+    font-size: 1.3vw;
   }
 }
 
@@ -132,12 +132,18 @@ body {
   border-radius: 30px;
   margin: 3%;
   width: 30vw;
-  min-width: 50vh;
+  min-height: 150px;
+  min-width: 500px;
   flex-wrap: wrap;
   cursor: pointer;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 0;
+}
+@media screen and (orientation: portrait) {
+  .review-cards {
+    min-width: 90vw;
+  }
 }
 
 .review-img {
@@ -174,15 +180,15 @@ body {
 
 /* Rose Styles */
 .rose-header-container {
-  height: 30vh;
+  height: 40vh;
   width: 100%;
-  margin-top: 5vh;
   position: relative;
 }
+
 .rose-header {
   background-image: url("../images/rose-background.jpg");
   background-size: cover;
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   top: 0;
   background-position: 0%;
@@ -199,22 +205,11 @@ body {
   position: absolute;
 }
 
-/* Shopping Boxes */
+/* Cells */
 .flexbox-container {
   height: auto;
   margin-bottom: 5%;
 }
-
-/* .cell {
-  background-color: white;
-  width: 20vh;
-  height: 30vh;
-  margin: 3vw;
-  flex-wrap: wrap;
-  cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 0;
-} */
 
 @media screen and (orientation: landscape) {
   .cell {
@@ -241,7 +236,7 @@ body {
 .cell-text-title {
   text-align: center;
   font-family: Fauna One;
-  font-size: 200%;
+  font-size: 2rem;
 }
 
 .cell-img {
@@ -254,9 +249,64 @@ body {
   background: #ff0034;
   border-radius: 50px;
   font-family: Fauna One;
-  font-size: 100%;
+  font-size: 1.5rem;
   color: white;
   border-style: none;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 20% 10px 20%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Bouquet Styles */
+.bouquet-header-container {
+  height: 40vh;
+  width: 100%;
+  position: relative;
+}
+
+.bouquet-header {
+  background-image: url("../images/bouquet-background.jpg");
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  top: 0;
+  background-position: 0%;
+}
+.bouquet-header-text {
+  font-family: Fjord One;
+  font-size: 8vh;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  text-shadow: 5px 5px #1e1e1e;
+  bottom: 0;
+  position: absolute;
+}
+
+/* Chocolate Styles */
+
+.chocolates-header-container {
+  height: 40vh;
+  width: 100%;
+  position: relative;
+}
+
+.chocolates-header {
+  background-image: url("../images/chocolates-background.jpg");
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  top: 0;
+  background-position: 0%;
+}
+.chocolates-header-text {
+  font-family: Fjord One;
+  font-size: 8vh;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  text-shadow: 5px 5px #1e1e1e;
+  bottom: 0;
+  position: absolute;
 }

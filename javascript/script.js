@@ -16,7 +16,7 @@ function addCard(i, folder_location, container_id) {
   price.className = "cell-text-title";
   /* Generate random price */
   price.textContent =
-    "P" + Math.round((Math.floor(Math.random() * 400) + 200) / 10) * 10;
+    "P" + Math.round((Math.floor(Math.random() * 500) + 200) / 10) * 10;
   btn_container.className = "d-flex justify-content-center";
   btn.className = "cell-btn";
   btn.textContent = "Buy";
