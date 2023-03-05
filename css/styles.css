@@ -310,3 +310,36 @@ body {
   bottom: 0;
   position: absolute;
 }
+
+/* About Us */
+
+.about-container {
+  height: 30%;
+  width: 90%;
+  margin: 10% 0% 5% 5%;
+  text-align: center;
+  position: relative;
+  padding: 5%;
+  background-color: #fcf5ee;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-text-headline {
+  font-family: Fjord One;
+  font-size: 3rem;
+  color: #1e1e1e;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.about-text {
+  font-family: Fjord One;
+  font-size: 1.5rem;
+  color: #1e1e1e;
+  bottom: 0;
+  width: 100%;
+  text-align: justify;
+  text-indent: 4rem;
+}
