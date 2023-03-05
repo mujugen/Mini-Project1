@@ -194,7 +194,7 @@ body {
   margin-bottom: 5%;
 }
 
-.cell {
+/* .cell {
   background-color: white;
   width: 20vh;
   height: 30vh;
@@ -203,17 +203,39 @@ body {
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 0;
+} */
+
+@media screen and (orientation: landscape) {
+  .cell {
+    background-color: white;
+    width: 15vw;
+    height: fit-content;
+    margin: 3vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .cell {
+    background-color: white;
+    width: 40vw;
+    height: fit-content;
+    margin: 3vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0;
+  }
 }
 
 .cell-text-title {
   text-align: center;
   font-family: Fauna One;
-  font-size: 2rem;
+  font-size: 200%;
 }
 
 .cell-img {
   width: 100%;
-  height: 60%;
+  aspect-ratio: 1/1;
   object-fit: cover;
 }
 
@@ -221,7 +243,7 @@ body {
   background: #ff0034;
   border-radius: 50px;
   font-family: Fauna One;
-  font-size: 1.5rem;
+  font-size: 100%;
   color: white;
   border-style: none;
   padding: 10px 30px 10px 30px;
