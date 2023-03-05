@@ -314,14 +314,20 @@ body {
 /* About Us */
 
 .about-container {
-  height: 30%;
+  height: fit-content;
   width: 90%;
   margin: 10% 0% 5% 5%;
   text-align: center;
-  position: relative;
+  position: absolute;
   padding: 5%;
   background-color: #fcf5ee;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (orientation: portrait) {
+  .about-container {
+    margin: 25% 0% 5% 5%;
+  }
 }
 
 .about-text-headline {
@@ -342,4 +348,50 @@ body {
   width: 100%;
   text-align: justify;
   text-indent: 4rem;
+}
+
+/* Contact */
+
+.contact-container {
+  height: fit-content;
+  width: 90%;
+  margin: 10% 0% 5% 5%;
+  text-align: center;
+  padding: 5%;
+  background-color: #fcf5ee;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (orientation: portrait) {
+  .contact-container {
+    margin: 25% 0% 5% 5%;
+  }
+}
+
+.contact-text-headline {
+  font-family: Fjord One;
+  font-size: 3rem;
+  color: #1e1e1e;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.contact-text-section {
+  font-family: Fjord One;
+  font-size: 150%;
+  color: #1e1e1e;
+  bottom: 0;
+  text-align: left;
+  padding: 1%;
+  word-wrap: break-word;
+}
+
+.contact-text {
+  word-wrap: break-word;
+  font-family: Fjord One;
+  font-size: 125%;
+  color: #1e1e1e;
+  bottom: 0;
+  text-align: justify;
 }
