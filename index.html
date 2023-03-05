@@ -32,7 +32,7 @@
 
     <script>
       $(function () {
-        $("#nav-placeholder").load("nav.html");
+        $("#nav-placeholder").load("pages/nav.html");
       });
     </script>
     <!-- Header ---------------------------------------------------->
@@ -40,7 +40,13 @@
       <div class="home-header">
         <div class="header-text">Buy your first bouquet<br />for 50% off!</div>
         <div class="header-button-div">
-          <button class="header-btn" type="button">Shop Now</button>
+          <button
+            class="header-btn"
+            type="button"
+            onclick="location.href = '/pages/roses.html';"
+          >
+            Shop Now
+          </button>
         </div>
       </div>
       <!-- Cells ---------------------------------------------------->
@@ -159,7 +165,7 @@
           <button
             class="footer-btn"
             type="button"
-            onclick="location.href = 'contact.html';"
+            onclick="location.href = '/pages/contact.html';"
           >
             Contact
           </button>

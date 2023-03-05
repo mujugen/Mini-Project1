@@ -8,7 +8,7 @@ function addCard(i, folder_location, container_id) {
   const img = document.createElement("img");
   const btn_container = document.createElement("div");
   const btn = document.createElement("button");
-  var img_filename = "images/" + folder_location + "/" + i + ".jpg";
+  var img_filename = "/images/" + folder_location + "/" + i + ".jpg";
   /* Set class names */
   cell.className = "p-2 cell";
   img.src = img_filename;
