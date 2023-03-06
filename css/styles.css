@@ -236,7 +236,9 @@ body {
 .cell-text-title {
   text-align: center;
   font-family: Fauna One;
-  font-size: 2rem;
+  font-size: calc(1rem + 20%);
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .cell-img {
@@ -246,10 +248,11 @@ body {
 }
 
 .cell-btn {
+  margin-top: -5%;
   background: #ff0034;
   border-radius: 50px;
   font-family: Fauna One;
-  font-size: 1.5rem;
+  font-size: calc(1rem + 20%);
   color: white;
   border-style: none;
   padding: 10px 20% 10px 20%;
