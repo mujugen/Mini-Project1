@@ -364,34 +364,10 @@ body {
 
 @media screen and (orientation: portrait) {
   .contact-container {
-    margin: 25% 0% 5% 5%;
+    margin-top: 20%;
   }
 }
 
-.contact-text-headline {
-  font-family: Fjord One;
-  font-size: 3rem;
-  color: #1e1e1e;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 5%;
-}
-.contact-text-section {
-  font-family: Fjord One;
-  font-size: 150%;
-  color: #1e1e1e;
-  bottom: 0;
-  text-align: left;
-  padding: 1%;
-  word-wrap: break-word;
-}
-
 .contact-text {
-  word-wrap: break-word;
   font-family: Fjord One;
-  font-size: 125%;
-  color: #1e1e1e;
-  bottom: 0;
-  text-align: justify;
 }
