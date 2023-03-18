@@ -328,10 +328,27 @@ body {
   background-color: #fcf5ee;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.about-text {
+  font-family: Fjord One;
+  font-size: 1.5rem;
+  color: #1e1e1e;
+  bottom: 0;
+  width: 100%;
+  text-align: justify;
+  text-indent: 4rem;
+}
 @media screen and (orientation: portrait) {
   .about-container {
     margin: 25% 0% 5% 5%;
+  }
+  .about-text {
+    font-family: Fjord One;
+    font-size: 1rem;
+    color: #1e1e1e;
+    bottom: 0;
+    width: 100%;
+    text-align: justify;
+    text-indent: 2rem;
   }
 }
 
@@ -343,16 +360,6 @@ body {
   width: 100%;
   text-align: center;
   padding-bottom: 5%;
-}
-
-.about-text {
-  font-family: Fjord One;
-  font-size: 1.5rem;
-  color: #1e1e1e;
-  bottom: 0;
-  width: 100%;
-  text-align: justify;
-  text-indent: 4rem;
 }
 
 /* Contact */
